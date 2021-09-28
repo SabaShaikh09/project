@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Story-kids website</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="brief description about your webpage">
+        <meta name="keywords" content="important words">
+        <meta name="author" content="author name">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <style>
+            /* FOOTER */
+.footer {
+  padding: 7rem 2rem;
+  background-color: #37383d;
+}
+
+.footer__nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.footer__item {
+  margin-right: 4rem;
+}
+
+.footer__link {
+  font-size: 1.6rem;
+  color: #eee;
+  text-decoration: none;
+}
+
+.footer__logo {
+  height: 5rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.footer__copyright {
+  font-size: 1.4rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.footer__copyright .footer__link {
+  font-size: 1.4rem;
+}
+
+     </style>
+        
+    </head>
+    <body>
+       <header>
+           <a href="#" class="logo">KIDS</a>
+           <ul>
+               <li><a href="moonlight.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="stories.html">Stories</a></li>
+               <li><a href="contact.html">contactus</a></li>
+           </ul>
+       </header>
+       <section>
+           <img src="image/stars.png" id="stars">
+           <img src="image/moon.png" id="moon">
+           <img src="image/mountains_behind.png" id="behind">
+           <h2 id="text">Story-kids</h2>
+           <a href="#sec" id="btn">Read more</a>
+           <img src="image/mountains_front.png" id="front">
+         </section>
+           <div class="sec" id="sec">
+               <h1>Begining Information,Happy to tell you</h1>
+               <p>Through small stories, the idea is to illustrate the greatness of our human culture. 
+                   Through the stories one can learn the various aspects of our lives. 
+                   We urge people to read the stories carefully and apply the Moral learnt through the stories in their everyday life.
+               <br><br>
+               Here is a large collection of different types of Stories. From all regions of the world, this collection has been made to 
+               represent the true spirit of our culture. The underlining principles would be truth, love, mutual respect, righteousness, 
+               rectitude, divinity, priority to societal unity, etc…All people, including the old people, would enjoy reading these stories. 
+               You are welcome to share these stories with your friends.
+            <br><br>
+            Choose From Stories That Your Child Loves. Introduce Them To The Magical World Of Reading stories which will develop there skills
+            and knowledge and also the enjoyment increases without being bored .
+            <br><br>
+            I am damm sure you'll be very happy after visiting my website.The childrens ,the old people even any ages of people can read it 
+            in the free time.
+        <br><br>
+           I hope you will definitely like it .So contact and free to ask the questions.
+            </p>
+           </div>
+           <footer class="footer">
+            <ul class="footer__nav">
+              <li class="footer__item">
+                <a class="footer__link" href="#">About</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Pricing</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Terms of Use</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <img src="image/logo1.png" alt="Logo" class="footer__logo" />
+            <p class="footer__copyright">
+              &copy; Copyright by Shaikh Saba
+            </p>
+          </footer>
+        
+           <script>
+               let stars=document.getElementById('stars');
+               let moon=document.getElementById('moon');
+               let behind=document.getElementById('behind');
+               let front=document.getElementById('front');
+               let btn=document.getElementById('btn');
+               let text=document.getElementById('text');
+               let header=document.querySelector('header');
+
+
+               window.addEventListener('scroll', function(){
+                   let value = window.scrollY;
+                   stars.style.left = value * 0.25 + 'px';
+                   moon.style.top = value * 1.05 + 'px';
+                   behind.style.top = value * 0.5 + 'px';
+                   front.style.top = value * 0 + 'px';
+                   text.style.marginRight = value * 4 + 'px';
+                   text.style.marginTop = value * 1.5 + 'px';
+                   btn.style.marginTop = value * 1.5 + 'px';
+                   header.style.top = value * 0.5 + 'px';
+
+               })
+
+              
+               </script>
+    </body>
+    </html>

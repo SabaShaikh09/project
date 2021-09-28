@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Story-kids website</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="brief description about your webpage">
+        <meta name="keywords" content="important words">
+        <meta name="author" content="author name">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+     
+        <style>
+            /* FOOTER */
+.footer {
+  padding: 7rem 2rem;
+  background-color: #37383d;
+}
+
+.footer__nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.footer__item {
+  margin-right: 4rem;
+}
+
+.footer__link {
+  font-size: 1.6rem;
+  color: #eee;
+  text-decoration: none;
+}
+
+.footer__logo {
+  height: 5rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.footer__copyright {
+  font-size: 1.4rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.footer__copyright .footer__link {
+  font-size: 1.4rem;
+}
+
+     </style>
+    </head>
+    <body>
+        <header id="about">
+            <a href="#" class="logo">KIDS</a>
+            <ul>
+                <li><a href="moonlight.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="contact.html">contactus</a></li>
+            </ul>
+        </header>
+
+        <div class="contactus">
+            <div class="title">
+               <h2>Get in Touch</h2>
+            </div>
+            <div class="box">
+                <!--form-->
+                <div class="contact form">
+                    <h3>Send a Message</h3>
+                    <form >
+                        <div class="formbox">
+                            <div class="row50">
+                                <div class="inputbox">
+                                    <span>First Name</span>
+                                    <input type="text" placeholder="Saba">
+                                </div>
+                                <div class="inputbox">
+                                    <span>Last Name</span>
+                                    <input type="text" placeholder="Shaikh">
+                                </div>
+                            </div>
+                            <div class="row50">
+                                <div class="inputbox">
+                                    <span>Email</span>
+                                    <input type="email" placeholder="abc@gmail.com" required>
+                                </div>
+                                <div class="inputbox">
+                                    <span>Mobile No</span>
+                                    <input type="text" placeholder="+91 9583627197">
+                                </div>
+                            </div>
+                            <div class="row100">
+                                <div class="inputbox">
+                                    <span>Message</span>
+                                    <textarea placeholder="Write your message here----"></textarea>
+                                </div>
+                            </div>
+                            <div class="row100">
+                                <div class="inputbox">
+                                    <input type="submit" value="Send">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="contact info">
+                    <h3>Contact Info</h3>
+                    <div class="infobox">
+                        <div>
+                            <span><ion-icon name="pin"></ion-icon></span>
+                            <p>Nehru Planetarium,Worli lotus ,Mumbai <br> Maharashtra India</p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="mail"></ion-icon></span>
+                           <a href="mailto:saba.shaikh@neosoftmail.com">saba.shaikh@neosoftmail.com</a>
+                        </div>
+                        <div>
+                            <span><ion-icon name="call"></ion-icon></span>
+                           <a href="#">+91 9322318302</a>
+                        </div>
+                        <ul class="sc1">
+                            <li><a href="#"></a><ion-icon name="logo-facebook"></ion-icon></li>
+                            <li><a href="#"></a><ion-icon name="logo-twitter"></ion-icon></li>
+                            <li><a href="#"></a><ion-icon name="logo-linkedin"></ion-icon></li>
+                            <li><a href="#"></a><ion-icon name="logo-instagram"></ion-icon></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact map">
+                    <iframe src="https://www.google.com/maps/embed?pb=
+                    !1m18!1m12!1m3!1d3772.6726451696713!2d72.81260861472828!3d18.990059287137278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                    1!3m3!1m2!1s0x3bd3665787c4ee6d%3A0xcba9fe91bf3fc50c!2sNehru%20Planetarium!5e0!3m2!1sen!2sin!4v1632758891929!5m2!1sen!2sin" 
+                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="footer__nav">
+              <li class="footer__item">
+                <a class="footer__link" href="#">About</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Pricing</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Terms of Use</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <img src="image/logo1.png" alt="Logo" class="footer__logo" />
+            <p class="footer__copyright">
+              &copy; Copyright by Shaikh Saba
+            </p>
+          </footer>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script>
+            let fnameNode = document.getElementById("fname");
+let spanNode = document.getElementById("error1");
+
+//onEvent function
+function validate1(){
+    spanNode.innerHTML = "";
+    let fname = fnameNode.value;
+
+    //if nothings entered here
+    if(fname == ''){
+        spanNode.innerHTML = "Thie field is required!";
+        fnameNode.style.border = "2px solid red";
+        return false;
+    }
+
+    //space given in name
+    else if(fname.includes(' ')){
+        spanNode.innerHTML = "spacenot allowed";
+        fnameNode.style.border = "2px solid red";
+        return false;
+    }
+
+    //name given correctly
+    else{
+        fnameNode.style.border = "2px solid green";
+        return true;
+    }
+}
+
+let lnameNode = document.getElementById("lname");
+let spanNode1 = document.getElementById("error2");
+
+//onEvent function
+function validate2(){
+    spanNode1.innerHTML = "";
+    let lname = lnameNode.value;
+
+    //if nothings entered here
+    if(lname == ''){
+        spanNode1.innerHTML = "Thie field is required!";
+        lnameNode.style.border = "2px solid red";
+    }
+
+    //space given in name
+    else if(lname.includes(' ')){
+        spanNode1.innerHTML = "spacenot allowed";
+        lnameNode.style.border = "2px solid red";
+    }
+
+    //name given correctly
+    else{
+        lnameNode.style.border = "2px solid green";
+    }
+}
+
+//-------------------------------------Email ID----------------------------------------------------------
+
+let emailNode = document.getElementById("emailID");
+let spanNode5 = document.getElementById("error5");
+
+function validate5(){
+    spanNode5.innerHTML = "";
+    let email = emailNode.value;
+    let subs = email.substring(email.indexOf('@'+1));
+    var re = /\S+@\S+\.\S+/;
+    let emailStat = re.test(email);
+    if(email == ""){
+        spanNode5.innerHTML = "This field is required!";
+        emailNode.style.border = "2px solid red";
+    }
+
+   else if (emailStat != true){
+    spanNode5.innerHTML = "Incorrect Email";
+    emailNode.style.border = "2px solid red";
+   }
+
+   else{
+    emailNode.style.border = "3px solid green";
+   }
+}
+function ValidateForm(){
+  let  v1= validate1();
+   }
+        </script>
+    </body>
+</html>

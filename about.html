@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Story-kids website</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="brief description about your webpage">
+        <meta name="keywords" content="important words">
+        <meta name="author" content="author name">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            /* FOOTER */
+.footer {
+  padding: 7rem 2rem;
+  background-color: #37383d;
+}
+
+.footer__nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.footer__item {
+  margin-right: 4rem;
+}
+
+.footer__link {
+  font-size: 1.6rem;
+  color: #eee;
+  text-decoration: none;
+}
+
+.footer__logo {
+  height: 5rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.footer__copyright {
+  font-size: 1.4rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.footer__copyright .footer__link {
+  font-size: 1.4rem;
+}
+
+     </style>
+    </head>
+    <body>
+        <header id="about">
+            <a href="#" class="logo">KIDS</a>
+            <ul>
+                <li><a href="moonlight.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="#">contactus</a></li>
+            </ul>
+        </header>
+        <div class="hero">
+            <h1>About</h1>
+          <div class="container">
+              <div class="indicator">
+                  <span class="buttn active"></span>
+                  <span class="buttn"></span>
+                  <span class="buttn"></span>
+                  <span class="buttn"></span>
+              </div>
+          <div class="testing">
+            <div class="row" id="sliderow">
+                <div class="col">
+                    <div class="txtimg"> 
+                       <p> In a fairytale, the story always involves magic, a character who is evil, and a happy ending. 
+                           This is the good versus evil type of story, with other-worldly, mysterious factors. Very often (but not always)
+                            fairytales are set in a far-away place a long, long time ago. A princess is  oftentimes a key character, but not always. 
+                           The one character that must be in the story is some sort of evil one, sometimes an evil witch.</p>
+                       <h3>~~~FairyTales</h3>
+                    </div>
+                    <div class="userimg">
+                      <img src="image/fairy.jpg">
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="txtimg"> 
+                     <p>Short scary stories for kids,teens and adults to tell in the dark.
+                         Read true ghost stories,real urban legends and short tales of horror online.
+                         These stories are perfect for telling at Halloween,at bedtime,at sleepovers
+                         or around the campfire.
+                     </p>
+                     <h3>~~~Horror/Ghost stories</h3>
+                  </div>
+                  <div class="userimg">
+                    <img src="image/horror.jpg">
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="txtimg"> 
+                     <p>A comic story is a form of creative writing where the story is displayed by images, drawings and cartoons. 
+                         The dialogues exchanged between the characters form the written part of the story. The images which are arranged sequentially are interrelated and together cohesive form a narrative. 
+                         This narrative is usually rich in humor and very comical.</p>
+                     <h3>~~~Comic stories</h3>
+                  </div>
+                  <div class="userimg">
+                    <img src="image/comic.jpg">
+                  </div>
+              </div>
+              <div class="col">
+                <div class="txtimg"> 
+                   <p>These are books with stories that rhyme. It can be absolutely any type of story, 
+                       but the great thing about poetry books for kids is that they support 
+                       and strengthen language development and memory skills.</p>
+                   <h3>~~~Poetry and Verse</h3>
+                </div>
+                <div class="userimg">
+                  <img src="image/poetry.jpeg">
+                </div>
+            </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="image/logo1.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by Shaikh Saba
+      </p>
+    </footer>
+  
+      <script>
+          var buttn=document.getElementsByClassName('buttn');
+
+var sliderow=document.getElementById('sliderow');
+buttn[0].onclick = function(){
+    sliderow.style.transform = "translateX(0px)";
+    for(i=0;i<4;i++){
+        buttn[i].classList.remove("active");
+    }
+    this.classList.add("active");
+}
+buttn[1].onclick = function(){
+    sliderow.style.transform = "translateX(-800px)";
+    for(i=0;i<4;i++){
+        buttn[i].classList.remove("active");
+    }
+    this.classList.add("active");
+}
+buttn[2].onclick = function(){
+    sliderow.style.transform = "translateX(-1600px)";
+    for(i=0;i<4;i++){
+        buttn[i].classList.remove("active");
+    }
+    this.classList.add("active");
+}
+buttn[3].onclick = function(){
+    sliderow.style.transform = "translateX(-2400px)";
+    for(i=0;i<4;i++){
+        buttn[i].classList.remove("active");
+    }
+    this.classList.add("active");
+}
+
+    </script>
+    </body>
+</html>
